@@ -1,0 +1,16 @@
+PatientID,Age,Gender,BMI,BloodPressure,CholesterolLevel,Diabetes,Smoker,HeartDisease,PhysicalActivityLevel
+P001,45,Female,24.5,120,180,No,No,No,Moderate
+P002,59,Male,30.2,140,210,Yes,Yes,Yes,Low
+P003,33,Female,22.0,110,170,No,No,No,High
+P004,70,Male,28.5,150,240,Yes,Yes,Yes,Low
+P005,50,Female,26.3,135,200,Yes,No,No,Moderate
+P006,41,Male,23.9,120,185,No,No,No,High
+P007,65,Female,31.1,160,220,Yes,Yes,Yes,Low
+P008,38,Male,27.4,130,190,No,Yes,No,Moderate
+P009,29,Female,21.8,115,165,No,No,No,High
+P010,55,Male,29.9,145,230,Yes,Yes,Yes,Low
+P011,47,Female,25.6,125,195,No,No,No,Moderate
+P012,61,Male,32.5,155,250,Yes,Yes,Yes,Low
+P013,36,Female,24.0,118,175,No,No,No,High
+P014,72,Male,28.0,150,235,Yes,Yes,Yes,Low
+P015,43,Female,26.9,130,190,No,No,No,Moderate

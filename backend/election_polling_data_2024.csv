@@ -1,0 +1,5 @@
+poll_date,	candidate,	party,	percentage,	sample_size,	location
+2024-07-15,	John Smith,	Democratic,	42.3,	1200,	California
+2024-07-15,	Jane Doe,	Republican,	38.7,	1200,	California
+2024-07-16,	John Smith,	Democratic,	41.8,	950,	Texas
+2024-07-16,	Jane Doe,	Republican,	39.2,	950,	Texas

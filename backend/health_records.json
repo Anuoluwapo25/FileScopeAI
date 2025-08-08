@@ -1,0 +1,38 @@
+[
+  {
+    "PatientID": 1,
+    "Age": 45,
+    "Gender": "Male",
+    "BMI": 24.5,
+    "BloodPressure": "120/80",
+    "Cholesterol": 190,
+    "Glucose": 95,
+    "Smoker": "No",
+    "DiabetesRisk": "Low",
+    "LastVisitDate": "2025-07-15"
+  },
+  {
+    "PatientID": 2,
+    "Age": 32,
+    "Gender": "Female",
+    "BMI": 28.1,
+    "BloodPressure": "130/85",
+    "Cholesterol": 210,
+    "Glucose": 105,
+    "Smoker": "No",
+    "DiabetesRisk": "Medium",
+    "LastVisitDate": "2025-07-20"
+  },
+  {
+    "PatientID": 3,
+    "Age": 67,
+    "Gender": "Female",
+    "BMI": 31.2,
+    "BloodPressure": "140/90",
+    "Cholesterol": 240,
+    "Glucose": 120,
+    "Smoker": "Yes",
+    "DiabetesRisk": "High",
+    "LastVisitDate": "2025-07-10"
+  }
+]

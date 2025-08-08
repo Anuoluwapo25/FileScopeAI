@@ -1,0 +1,1 @@
+web: gunicorn filescope_ai.wsgi:application

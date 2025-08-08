@@ -1,0 +1,450 @@
+[
+    {
+      "name": "AnalysisUpdated",
+      "type": "event",
+      "inputs": [
+        {
+          "name": "datasetId",
+          "type": "uint256",
+          "indexed": true,
+          "internalType": "uint256"
+        },
+        {
+          "name": "newAnalysisCID",
+          "type": "string",
+          "indexed": false,
+          "internalType": "string"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "name": "DatasetCited",
+      "type": "event",
+      "inputs": [
+        {
+          "name": "datasetId",
+          "type": "uint256",
+          "indexed": true,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "name": "DatasetDownloaded",
+      "type": "event",
+      "inputs": [
+        {
+          "name": "datasetId",
+          "type": "uint256",
+          "indexed": true,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "name": "DatasetUploaded",
+      "type": "event",
+      "inputs": [
+        {
+          "name": "datasetId",
+          "type": "uint256",
+          "indexed": true,
+          "internalType": "uint256"
+        },
+        {
+          "name": "uploader",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "datasetCID",
+          "type": "string",
+          "indexed": false,
+          "internalType": "string"
+        },
+        {
+          "name": "analysisCID",
+          "type": "string",
+          "indexed": false,
+          "internalType": "string"
+        },
+        {
+          "name": "isPublic",
+          "type": "bool",
+          "indexed": false,
+          "internalType": "bool"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "name": "DatasetViewed",
+      "type": "event",
+      "inputs": [
+        {
+          "name": "datasetId",
+          "type": "uint256",
+          "indexed": true,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "name": "OwnershipTransferred",
+      "type": "event",
+      "inputs": [
+        {
+          "name": "previousOwner",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "newOwner",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "name": "VisibilityChanged",
+      "type": "event",
+      "inputs": [
+        {
+          "name": "datasetId",
+          "type": "uint256",
+          "indexed": true,
+          "internalType": "uint256"
+        },
+        {
+          "name": "newVisibility",
+          "type": "bool",
+          "indexed": false,
+          "internalType": "bool"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "name": "changeVisibility",
+      "type": "function",
+      "inputs": [
+        {
+          "name": "datasetId",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "newVisibility",
+          "type": "bool",
+          "internalType": "bool"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "name": "getAllPublicDatasets",
+      "type": "function",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "tuple[]",
+          "components": [
+            {
+              "name": "datasetCID",
+              "type": "string",
+              "internalType": "string"
+            },
+            {
+              "name": "analysisCID",
+              "type": "string",
+              "internalType": "string"
+            },
+            {
+              "name": "uploader",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "isPublic",
+              "type": "bool",
+              "internalType": "bool"
+            },
+            {
+              "name": "timestamp",
+              "type": "uint256",
+              "internalType": "uint256"
+            },
+            {
+              "name": "views",
+              "type": "uint256",
+              "internalType": "uint256"
+            },
+            {
+              "name": "downloads",
+              "type": "uint256",
+              "internalType": "uint256"
+            },
+            {
+              "name": "citations",
+              "type": "uint256",
+              "internalType": "uint256"
+            }
+          ],
+          "internalType": "struct FileScopeRegistry.Dataset[]"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "name": "getDataset",
+      "type": "function",
+      "inputs": [
+        {
+          "name": "datasetId",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "tuple",
+          "components": [
+            {
+              "name": "datasetCID",
+              "type": "string",
+              "internalType": "string"
+            },
+            {
+              "name": "analysisCID",
+              "type": "string",
+              "internalType": "string"
+            },
+            {
+              "name": "uploader",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "isPublic",
+              "type": "bool",
+              "internalType": "bool"
+            },
+            {
+              "name": "timestamp",
+              "type": "uint256",
+              "internalType": "uint256"
+            },
+            {
+              "name": "views",
+              "type": "uint256",
+              "internalType": "uint256"
+            },
+            {
+              "name": "downloads",
+              "type": "uint256",
+              "internalType": "uint256"
+            },
+            {
+              "name": "citations",
+              "type": "uint256",
+              "internalType": "uint256"
+            }
+          ],
+          "internalType": "struct FileScopeRegistry.Dataset"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "name": "getMyDatasets",
+      "type": "function",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "tuple[]",
+          "components": [
+            {
+              "name": "datasetCID",
+              "type": "string",
+              "internalType": "string"
+            },
+            {
+              "name": "analysisCID",
+              "type": "string",
+              "internalType": "string"
+            },
+            {
+              "name": "uploader",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "isPublic",
+              "type": "bool",
+              "internalType": "bool"
+            },
+            {
+              "name": "timestamp",
+              "type": "uint256",
+              "internalType": "uint256"
+            },
+            {
+              "name": "views",
+              "type": "uint256",
+              "internalType": "uint256"
+            },
+            {
+              "name": "downloads",
+              "type": "uint256",
+              "internalType": "uint256"
+            },
+            {
+              "name": "citations",
+              "type": "uint256",
+              "internalType": "uint256"
+            }
+          ],
+          "internalType": "struct FileScopeRegistry.Dataset[]"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "name": "incrementCitations",
+      "type": "function",
+      "inputs": [
+        {
+          "name": "datasetId",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "name": "incrementDownloads",
+      "type": "function",
+      "inputs": [
+        {
+          "name": "datasetId",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "name": "incrementViews",
+      "type": "function",
+      "inputs": [
+        {
+          "name": "datasetId",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "name": "owner",
+      "type": "function",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "name": "renounceOwnership",
+      "type": "function",
+      "inputs": [],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "name": "totalDatasets",
+      "type": "function",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "name": "transferOwnership",
+      "type": "function",
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "name": "updateAnalysis",
+      "type": "function",
+      "inputs": [
+        {
+          "name": "datasetId",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "newAnalysisCID",
+          "type": "string",
+          "internalType": "string"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "name": "uploadDataset",
+      "type": "function",
+      "inputs": [
+        {
+          "name": "_datasetCID",
+          "type": "string",
+          "internalType": "string"
+        },
+        {
+          "name": "_analysisCID",
+          "type": "string",
+          "internalType": "string"
+        },
+        {
+          "name": "_isPublic",
+          "type": "bool",
+          "internalType": "bool"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    }
+  ]

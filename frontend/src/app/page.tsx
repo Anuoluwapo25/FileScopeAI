@@ -409,7 +409,7 @@ const FileScope = () => {
           
           <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm">
-              © 2025 FileScope AI. Built for EthNigeria Hackathon.
+              © 2025 FileScope AI. Built for Filecoin.
             </div>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <div className="text-gray-400 hover:text-white cursor-pointer">Privacy</div>
